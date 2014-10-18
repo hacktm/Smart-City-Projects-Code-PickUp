@@ -3,7 +3,13 @@ Smart-City-Projects-Code-PickUp
 
 Mentor-
 Nu stim cum il cheama, tipu ala cu laptop apple avea un badge lol :))
+Devs:
+Lucian Stefanoaica,
+Leonardocezary Ioan Chisciuc,
+Stefan Ghitescu.
 
+PRODUCT INFORMATION
+-------------------
 Shopping Assistant (food only, can be extended to other types of products)
 
 Requirements:
@@ -53,7 +59,7 @@ PC, Database (sqlite):
 
 DB structure:
 Food Table
-price, brand, type, quantity, market
+price, brand, type, market
 
 Shopping List Table
 price, brand, type, quantity, market
