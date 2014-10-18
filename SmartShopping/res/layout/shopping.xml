@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:background="#F5F5F5"
+        android:layout_height="fill_parent">
+
+    <Button
+            android:id="@+id/add"
+            android:text="@string/add"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/blueFont"
+            android:textSize="30sp"
+            android:layout_width="150dp"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+            android:id="@+id/remove"
+            android:text="@string/remove"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/blueFont"
+            android:textSize="30sp"
+            android:layout_width="120dp"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+    </Button>
+
+    <EditText
+            android:id="@+id/productNameAdder"
+            android:layout_below="@+id/add"
+            android:textColor="@color/blueFont"
+            android:textCursorDrawable="@null"
+            android:hint="Enter your product name"
+            android:inputType="text"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <EditText
+            android:id="@+id/brandNameAdder"
+            android:layout_below="@+id/productNameAdder"
+            android:textColor="@color/blueFont"
+            android:textCursorDrawable="@null"
+            android:hint="Enter your brand name"
+            android:inputType="text"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <EditText
+            android:id="@+id/quantityAdder"
+            android:layout_below="@+id/brandNameAdder"
+            android:textColor="@color/blueFont"
+            android:textCursorDrawable="@null"
+            android:hint="Enter your quantity"
+            android:inputType="text"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <ListView android:id="@android:id/list"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/quantityAdder"
+            />
+
+</RelativeLayout>

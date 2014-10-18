@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:background="#F5F5F5"
+        android:layout_height="fill_parent">
+
+    <TextView android:id="@+id/welcome"
+              android:textSize="35sp"
+              android:layout_width="280dp"
+              android:fontFamily="sans-serif"
+              android:textStyle="normal|bold|italic"
+              android:textColor="@color/blueFont"
+              android:layout_height="wrap_content"
+              android:text="\nWelcome to Smart Shopping "
+              android:gravity="center"
+              android:layout_centerHorizontal="true"
+            />
+
+    <Button
+            android:id="@+id/shopped"
+            android:text="@string/shopped"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/blueFont"
+            android:textSize="30sp"
+            android:layout_width="150dp"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+    </Button>
+
+    <Button
+            android:id="@+id/bought"
+            android:text="@string/bought"
+            android:background="@drawable/buttonshape"
+            android:textColor="@color/blueFont"
+            android:textSize="30sp"
+            android:layout_width="150dp"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+            android:id="@+id/help"
+            android:text="@string/help"
+            android:background="@android:color/transparent"
+            android:textColor="@color/blueFont"
+            android:textSize="25sp"
+            android:layout_width="100dp"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+    </Button>
+
+</RelativeLayout>
