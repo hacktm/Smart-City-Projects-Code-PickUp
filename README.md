@@ -66,3 +66,9 @@ price, brand, type, quantity, market
 
 Bought List Table
 price, brand, type, quantity, market
+
+
+WHAT WORKS
+----------
+web service (query db, receive json, send json)
+mobile app (send json, receive json)
