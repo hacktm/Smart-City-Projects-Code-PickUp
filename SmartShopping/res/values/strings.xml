@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartShopping</string>
+    <string name="shopped">Shopping List</string>
+    <string name="bought">Bought List</string>
+    <string name="help">About</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+</resources>
