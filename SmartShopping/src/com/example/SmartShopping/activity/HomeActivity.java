@@ -56,82 +56,17 @@ public class HomeActivity extends Activity {
         shoppingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println("IIIIIIIIIIIIIII  " + isNetworkAvailable());
 
-               /* new AsyncTask<Void, Void, Void>() {
-
-                    @Override
-                    protected Void doInBackground(Void... params) {
-                        URL url = null;
-                        JSONObject json = new JSONObject();
-                        String result = "";
-                        try {
-
-
-                            json.put("name", "ghanshyam");
-                            json.put("country", "India");
-                            json.put("twitter", "ghahhd");
-
-                            HttpPost post = new HttpPost(urlAddress);
-                            post.setHeader("Content-type", "application/json");
-                            post.setEntity(new StringEntity(json.toString(), "UTF-8"));
-                            DefaultHttpClient client = new DefaultHttpClient();
-                            HttpResponse httpresponse = client.execute(post);
-
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-
-                        return null;
-                    }
-
-
-                }.execute();*/
-
-                ConnectionThread connectionThread = new ConnectionThread();
-                connectionThread.execute(urlAddress);
+                Intent shoppingIntent = new Intent(HomeActivity.this, ShoppingActivity.class);
+                HomeActivity.this.startActivityForResult(shoppingIntent, 1);
 
             }
         });
 
-
-
-
-    }
-
-    public static String convertStreamToString(InputStream is)
-    {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-        StringBuilder sb = new StringBuilder();
-        String line = null;
-        try
-        {
-            while ((line = reader.readLine()) != null)
-            {
-                sb.append(line + "\n");
-            }
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        finally
-        {
-            try
-            {
-                is.close();
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        return sb.toString();
     }
 
     private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
